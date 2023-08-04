@@ -1,0 +1,34 @@
+#translate-container-boxes {
+    width: 100%;
+    height: 85%;
+    @include flex(row, center, center);
+
+
+    #translate-container-boxes-left {
+        width: 50%;
+        min-height: 30vh;
+        border-bottom-left-radius: 7px;
+        border: 1px solid #dae1e8;
+        @include flex(column, start, start);
+        position: relative;
+    }
+
+    #translate-container-boxes-right {
+        width: 50%;
+        min-height: 30vh;
+        border-bottom-right-radius: 7px;
+        @include flex(column, start, start);
+        position: relative;
+    }
+}
+
+#area-translate {
+    width: 80%;
+    height: auto;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+    border: none;
+    background-color: transparent;
+}

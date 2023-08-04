@@ -1,0 +1,48 @@
+#translate-container-languages {
+    border: 1px solid #dae1e8;
+    width: 100%;
+    height: 15%;
+    @include flex(row, center, center);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    #translate-container-languages-left {
+        width: 48%;
+        height: 100%;
+        @include flex(column, center, start);
+        padding: 1rem;
+
+        button {
+            span {
+                font-size: 1rem;
+
+                svg {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+
+    #translate-container-languages-half {
+        width: 4%;
+        height: 100%;
+        @include flex(column, center, center);
+    }
+
+    #translate-container-languages-right {
+        width: 48%;
+        height: 100%;
+        @include flex(column, center, start);
+        padding: 1rem;
+
+        button {
+            span {
+                font-size: 1rem;
+
+                svg {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}

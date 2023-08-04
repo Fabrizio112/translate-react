@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#root {
+    background-color: #f7f7f7;
+    @include flex(column, center, center);
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+}
+
+.btn-language {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.no-search {
+    display: none;
+}
+
+.x-mark {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.audio {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+}

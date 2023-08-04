@@ -1,0 +1,13 @@
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@import "general";
+@import "translate-app";
+@import "translate-container";
+@import "translate-container-languages";
+@import "translate-container-boxes";
+@import "section-language"
