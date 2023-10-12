@@ -39,7 +39,6 @@ function TranslateApp() {
     const refAudio = useRef()
 
     const handleVoice = (text, language) => {
-        console.log(text, language)
         const url = `https://text-to-speech-api3.p.rapidapi.com/speak?text=${text}&lang=${language}`;
         const options = {
             method: 'GET',
