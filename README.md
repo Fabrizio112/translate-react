@@ -59,7 +59,7 @@ _This project was built with the purposo of practise React_
 </p>
 
 ## 🤔 How this project was thinked and how it works
-**_<span style="text-decoration:underline">Main Idea</span> : A translate App**
+**<span style="text-decoration:underline">Main Idea</span> : A translate App**
 
 The APIs that was used :
 - [Text Translator](https://text-translator2.p.rapidapi.com)
