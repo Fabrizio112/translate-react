@@ -27,15 +27,15 @@ La idea era sencilla , poder tener una aplicacion de Traductor , en el que pudie
 Primero que nada ,todos mis estados estaban dentro de un contexto , esto para que toda la app tenga acceso a ellos y sea mas facil el traspaso de estos a lo largo de toda la aplicacion.
 Al cargar la aplicacion se obtiene todos los idiomas que soporta y puede traducir la Api , esto a traves del efecto principal sin dependencias que configure previamente y realiza la peticion al endpoint ('https://text-translator2.p.rapidapi.com/getLanguages'),y la respuesta llena el primer estado de la aplicacion llamado **_"languages"_**
 
-Cuando **_"Languages"_** posee informacion , se realiza el renderizado condicional donde se  renderizan las diferentes opciones  para seleccionar lenguage tanto de Origen como de Destino
+Cuando **_"Languages"_** posee informacion , se realiza el renderizado condicional donde se  renderizan las diferentes opciones  para seleccionar lenguage tanto de Origen como de Destino.
 
-Al seleccionar los diferentes lenguages tanto de Destino como de Origen , se rellenan los estados correspondientes a estos : **_"languageSource"_**,**_"languageTarget"_**
+Al seleccionar los diferentes lenguages tanto de Destino como de Origen , se rellenan los estados correspondientes a estos : **_"languageSource"_**,**_"languageTarget"_**.
 
-El usuario ya puede escribir lo que desee en la zona de traduccion pero por obvias razones no se va a traducir nada ya que para que funcione el traductor se necesita que se hayan seleccionado previamente los 2 lenguages. Si esta condicion se cumple ya se puede realizar la traduccion
+El usuario ya puede escribir lo que desee en la zona de traduccion pero por obvias razones no se va a traducir nada ya que para que funcione el traductor se necesita que se hayan seleccionado previamente los 2 lenguages. Si esta condicion se cumple ya se puede realizar la traduccion.
 
 Lo que el usuario escriba dentro de la zona de traduccion se guarda en el estado llamado **_"textToTranslate"_** y por cada caracter que este escriba se va a realizar una peticion fetch hacia la api con la informacion que este estado posea y con la informacion de los 2 lenguages . La respuesta de la API va a llenar el estado **_"textTranslated"_**, que no es mas que la traduccion del texto original al lenguage deseado .
 
-La zona de traduccion tiene 2 opciones diferentes : Una permite borrar el contenido escrito y por lo tanto limpiar el estado  **_"textToTranslate"_** y subsecuentemente el estado **_"textTranslated"_**. La otra opcion es para que un narrador pueda hablar tanto el texto a traducir como el texto traducido 
+La zona de traduccion tiene 2 opciones diferentes : Una permite borrar el contenido escrito y por lo tanto limpiar el estado  **_"textToTranslate"_** y subsecuentemente el estado **_"textTranslated"_**. La otra opcion es para que un narrador pueda hablar tanto el texto a traducir como el texto traducido .
 (Aclaracion 1: Esta funcion es un poco lenta asi que tarda un poco en hablar el narrador )
 (Aclaracion 2: El narrador soporta la mayoria de lenguages , pero siempre hay una excepcion al caso .Cuando no soporte la voz no aparecera el icono )
 
